@@ -3,7 +3,7 @@ $('form').on('submit', async function (e){
     e.preventDefault();
     const $searchVal = $('#search').val();
     
-   const response = await axios.get('http://api.giphy.com/v1/gifs/search', {params: {q: $searchVal, api_key: 'MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym'}});
+   const response = await axios.get('https://api.giphy.com/v1/gifs/search', {params: {q: $searchVal, api_key: 'MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym'}});
    console.log(response.data);
 
    $('#search').val("");
